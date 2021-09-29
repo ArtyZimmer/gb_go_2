@@ -1,0 +1,10 @@
+Для исполнения кросс-компиляции нужно поменять исполняему среду
+Я работаю на Windows, поэтому я выполнял следующий порядок команд
+
+set GOOS=linux
+go build panic.go
+
+После чего я получил успешно скоиплированный бинарник
+
+Вывод команды file:
+panic: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
